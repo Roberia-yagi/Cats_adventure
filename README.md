@@ -1,11 +1,11 @@
 # Cats_adventure
 
-Cats_adventure was created for a programming class for Shizuoka University.
-Music and sounds are deprived
+大学のグループワーク課題で作成したRPGゲームです．
+著作権の関係でBGMとSEは無音のものに差し替えてあります．
 
 # Requirement
 
-This project requires Java 8(includes JavaFX)
+動かすためにはJava 8及びJavaFXが必要です．
 
 ```bash
 $ java -version
@@ -16,7 +16,7 @@ OpenJDK 64-Bit Server VM (build 25.191-b12, mixed mode)
 
 # Usage
 
-Entry point is MapGame
+MapGameを起動してください．
 
 ```bash
 java MapGame
