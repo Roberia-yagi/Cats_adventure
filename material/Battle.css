@@ -1,0 +1,46 @@
+.background{
+  -fx-background-image: url('/png/background.jpg');
+  -fx-background-size: 100% 100%;    
+}
+
+.textbox{
+  -fx-background-image: url('/png/messagebox.png');
+  -fx-background-size: 100% 100%;    
+}
+
+.commandbox{
+  -fx-background-image: url('/png/commandbox.png');
+  -fx-background-size: 100% 100%;    
+}
+
+.statesbox{
+  -fx-background-image: url('/png/statesbox.png');
+  -fx-background-size: 100% 100%;    
+}
+
+.enemy{
+  -fx-background-image: url('/png/enemyd1.png');
+  -fx-background-size: 100% 100%;    
+}
+
+.textfont{
+  -fx-text-fill: #ad3c3c;
+  -fx-font-family: 'DragonQuestFC';
+  -fx-font-size: 200%;
+}
+
+.buttonfont{
+  -fx-text-fill: #ad3c3c;
+  -fx-font-family: 'DragonQuestFC';
+  -fx-font-size: 200%;
+  -fx-background-color: rgba(255, 255, 255, 0);
+}
+
+.crossvanish{
+  -fx-color: rgba(255, 255, 255, 0);
+}
+
+.white{
+  -fx-background-image: url('/png/white.png');
+  -fx-background-size: 100% 100%;    
+}

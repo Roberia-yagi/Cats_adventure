@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox onKeyPressed="#keyAction" prefHeight="832.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MapGameController">
+  <padding>
+    <Insets bottom="10" left="10" right="10" top="10" />
+  </padding>
+
+  <children>
+      <Pane prefHeight="96.0" prefWidth="892.0">
+         <children>
+            <HBox layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="312.0">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/Food.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="32.0" prefWidth="20.0" text="×">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="Item0Show" prefHeight="32.0" prefWidth="32.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/Sword.png" />
+                     </image></ImageView>
+                  <Label prefHeight="32.0" prefWidth="20.0" text="×">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="Item1Show" prefHeight="32.0" prefWidth="32.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/Sield.png" />
+                     </image></ImageView>
+                  <Label prefHeight="32.0" prefWidth="20.0" text="×">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="Item2Show" prefHeight="32.0" prefWidth="32.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/Ring.png" />
+                     </image></ImageView>
+                  <Label prefHeight="32.0" prefWidth="20.0" text="×">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="Item3Show" prefHeight="32.0" prefWidth="32.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@png/Money.png" />
+                     </image></ImageView>
+                  <Label prefHeight="32.0" prefWidth="20.0" text="×">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="Item4Show" prefHeight="32.0" prefWidth="32.0" text="Label">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+      <Label layoutX="13.0" layoutY="57.0" text="Floor:">
+        <font>
+          <Font size="15.0" />
+        </font>
+      </Label>
+      <Label fx:id="FloorShow" layoutX="56.0" layoutY="57.0" prefHeight="21.0" prefWidth="76.0" text="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+      <Label depthTest="DISABLE" layoutX="140.0" layoutY="57.0" prefHeight="21.0" prefWidth="30.0" text="HP:">
+        <font>
+          <Font size="15.0" />
+        </font>
+      </Label>
+      <Label layoutX="400.0" layoutY="57.0" prefHeight="21.0" prefWidth="40.0" text="item:">
+        <font>
+          <Font size="15.0" />
+        </font>
+      </Label>
+      <Label fx:id="itemCountShow" layoutX="438.0" layoutY="57.0" prefHeight="0.0" prefWidth="76.0" text="1">
+        <font>
+          <Font size="15.0" />
+        </font>
+      </Label>
+      <Label fx:id="CharaHpShow" layoutX="164.0" layoutY="57.0" prefHeight="21.0" prefWidth="76.0" text="1]">
+        <font>
+          <Font size="15.0" />
+        </font>
+      </Label>
+      <Label layoutX="516.0" layoutY="57.0" prefHeight="21.0" prefWidth="53.0" text="Score:">
+        <font>
+          <Font size="15.0" />
+        </font>
+      </Label>
+      <Label fx:id="ScoreShow" layoutX="565.0" layoutY="57.0" prefHeight="0.0" prefWidth="76.0" text="1">
+        <font>
+          <Font size="15.0" />
+        </font>
+      </Label>
+            <Label layoutX="261.0" layoutY="57.0" text="Level:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="LevelShow" layoutX="305.0" layoutY="57.0" prefHeight="21.0" prefWidth="76.0" text="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <StackPane layoutX="756.0" layoutY="-49.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <GridPane alignment="center" hgap="10" prefHeight="28.0" prefWidth="110.0" styleClass="crossvanish" stylesheets="@Battle.css" vgap="10">
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                     <children>
+                        <Button onAction="#upButtonAction" text="↑" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <Button onAction="#leftButtonAction" text="←" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <Button onAction="#rightButtonAction" text="→" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Button onAction="#downButtonAction" text="↓" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <Pane prefHeight="200.0" prefWidth="200.0" styleClass="white" stylesheets="@Battle.css" />
+               </children>
+            </StackPane>
+         </children>
+      </Pane>
+    <GridPane fx:id="mapGrid" prefHeight="737.0" prefWidth="892.0">
+      <columnConstraints>
+        <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+      </rowConstraints>
+      </GridPane>
+
+    </children>
+  </VBox>

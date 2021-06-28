@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="512.0" prefWidth="612.0" styleClass="background" stylesheets="@Battle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BattleController">
+  <padding>
+    <Insets bottom="10" left="10" right="10" top="10" />
+  </padding>
+  
+  <children>
+      <Pane prefHeight="120.0" prefWidth="592.0">
+         <children>
+            <Pane layoutY="4.0" prefHeight="102.0" prefWidth="122.0" styleClass="statesbox" stylesheets="@Battle.css">
+               <children>
+                  <Label layoutX="15.0" layoutY="5.0" styleClass="textfont" stylesheets="@Battle.css" text="ねこ" />
+                  <Label layoutX="15.0" layoutY="43.0" styleClass="textfont" stylesheets="@Battle.css" text="ＨＰ" />
+                  <Label fx:id="hp" layoutX="52.0" layoutY="43.0" styleClass="textfont" stylesheets="@Battle.css" text="Label" />
+                  <Label fx:id="mp" layoutX="52.0" layoutY="58.0" styleClass="textfont" stylesheets="@Battle.css" text="Label" />
+                  <Label layoutX="15.0" layoutY="27.0" styleClass="textfont" stylesheets="@Battle.css" text="ＬＶ" />
+                  <Label fx:id="level" layoutX="52.0" layoutY="27.0" styleClass="textfont" stylesheets="@Battle.css" text="Label" />
+                  <Label layoutX="16.0" layoutY="58.0" styleClass="textfont" stylesheets="@Battle.css" text="ＭＰ" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <StackPane fx:id="fieldPane" prefHeight="262.0" prefWidth="200.0">
+         <children>
+            <StackPane fx:id="enemyPane" prefHeight="82.0" prefWidth="122.0" />
+         </children>
+      </StackPane>
+      <Pane prefHeight="82.0" prefWidth="592.0" styleClass="textbox" stylesheets="@Battle.css">
+         <children>
+            <Label fx:id="battleText1" layoutX="20.0" layoutY="25.0" prefHeight="24.0" prefWidth="560.0" styleClass="textfont" stylesheets="@Battle.css" text="aaa" />
+            <Label fx:id="battleText2" layoutX="20.0" layoutY="7.0" prefHeight="24.0" prefWidth="560.0" styleClass="textfont" stylesheets="@Battle.css" text="たたかいがはじまった！" />
+         </children>
+      </Pane>
+      <Pane prefHeight="77.0" prefWidth="592.0" styleClass="commandbox" stylesheets="@Battle.css">
+         <children>
+            <Button layoutX="30.0" layoutY="10.0" mnemonicParsing="false" onAction="#attack" styleClass="buttonfont" stylesheets="@Battle.css" text="こうげき" />
+            <Button layoutX="470.0" layoutY="10.0" mnemonicParsing="false" onAction="#retreat" styleClass="buttonfont" stylesheets="@Battle.css" text="にげる" />
+            <Button layoutX="179.0" layoutY="10.0" mnemonicParsing="false" onAction="#spell" styleClass="buttonfont" stylesheets="@Battle.css" text="まほう" />
+            <Button layoutX="316.0" layoutY="10.0" mnemonicParsing="false" onAction="#heal" styleClass="buttonfont" stylesheets="@Battle.css" text="かいふく" />
+         </children>
+      </Pane>
+
+  </children>
+</VBox>
