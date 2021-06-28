@@ -22,6 +22,12 @@ MapGameを起動してください．
 java MapGame
 ```
 
+# Example
+
+![image](https://user-images.githubusercontent.com/68568267/123685221-69ad0d00-d889-11eb-967c-02c058231cde.png)
+
+![image](https://user-images.githubusercontent.com/68568267/123685302-7fbacd80-d889-11eb-8269-d931508b0f80.png)
+
 # License
 
 image: pipoya https://pipoya.net/
