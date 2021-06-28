@@ -24,4 +24,4 @@ java MapGame
 
 # License
 
-image: ぴぽや https://pipoya.net/
+image: pipoya https://pipoya.net/
